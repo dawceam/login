@@ -1,4 +1,22 @@
 <% provide(:titulo, "Login") %>
-<h1>Estaticas#login</h1>
-<p>Find me in app/views/estaticas/login.html.erb</p>
+<h1>Mi Web Login</h1>
+<p></p>
+
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:usuario, "Usuario:") %>
+  <%= text_field_tag(:usuario) %>
+  <br>
+  <%= label_tag(:password, "Contraseña:") %>
+  <%= password_field_tag(:password) %>
+  <br>
+  <%= submit_tag("Enviar") %>
+<% end %>
+
+
+
+<br>
+
+
+
 <%= render 'shared/header' %>
